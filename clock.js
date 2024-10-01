@@ -62,14 +62,14 @@ class CanvasClock {
     }
 
     draw() {
-        this.#context.reset();
+        requestAnimationFrame(() => {
+            this.#context.reset();
 
-        this.#drawSegments();
-        this.#drawTicks();
-        this.#drawNumbers();
-        this.#drawHands();
-
-        requestAnimationFrame(() => this.draw());
+            this.#drawSegments();
+            this.#drawTicks();
+            this.#drawNumbers();
+            this.#drawHands();
+        });
     }
 
     #drawHands() {
@@ -240,4 +240,7 @@ const canvasClock = new CanvasClock({
         { start: "19:00", end: "07:30", color: "#d0d9e2", text: "🛌 Go To Sleep" },
     ]
 });
+
 canvasClock.draw();
+// Re-draw every 60s
+setInterval(() => canvasClock.draw(), 60 * 1000);
