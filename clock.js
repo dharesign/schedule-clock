@@ -221,9 +221,9 @@ class CanvasClock {
 
 const canvasClock = new CanvasClock({
     canvas: document.getElementById("clock"),
-    radius: 600,
+    radius: Math.min(window.screen.height, window.screen.width) / 2,
     rotation: -Math.PI / 2,  // 90 degrees anticlockwise
-    dpi: 960,
+    dpi: 96 * window.devicePixelRatio,
 
     segments: [
         { start: "07:30", end: "07:40", color: "#ffe9ae", text: "🥱 Wake Up" },
