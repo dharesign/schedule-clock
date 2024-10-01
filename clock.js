@@ -201,7 +201,6 @@ class CanvasClock {
             let endAngle   = 2 * Math.PI * this.#angleForTime(segment.end);
             if (endAngle < startAngle) endAngle = 2 * Math.PI + endAngle;
             const midAngle   = (endAngle + startAngle) / 2;
-            console.log(segment.start, segment.end, segment.text, startAngle, endAngle, midAngle);
 
             const x = this.#radius + Math.cos(midAngle + this.#rotation) * this.#labelExtent;
             const y = this.#radius + Math.sin(midAngle + this.#rotation) * this.#labelExtent;
