@@ -226,17 +226,15 @@ const canvasClock = new CanvasClock({
     dpi: 96 * window.devicePixelRatio,
 
     segments: [
-        { start: "07:30", end: "07:40", color: "#ffe9ae", text: "🥱 Wake Up" },
-        { start: "07:40", end: "07:55", color: "#fb9ebb", text: "🧦🪥 Get Dressed" },
-        { start: "07:55", end: "08:05", color: "#d8eedf", text: "🚲 Go To School" },
-        { start: "08:05", end: "14:25", color: "#f9f7ff", text: "🏫 At School" },
-        { start: "14:25", end: "14:35", color: "#d8eedf", text: "🚲 Go Home" },
-        { start: "14:35", end: "17:30", color: "#fae7eb", text: "🛝 Play" },
-        { start: "17:30", end: "18:00", color: "#f0e5d7", text: "🍽️ Eat Dinner" },
-        { start: "18:00", end: "18:30", color: "#c0e5e8", text: "🛁 Take A Bath" },
-        { start: "18:30", end: "18:35", color: "#fb9ebb", text: "🪥 Clean Teeth" },
-        { start: "18:35", end: "19:00", color: "#eae2dd", text: "📚 Read Books" },
-        { start: "19:00", end: "07:30", color: "#d0d9e2", text: "🛌 Go To Sleep" },
+        { start: "07:30", end: "07:50", color: "#ffe9ae", text: "🧦🪥" },
+        { start: "07:50", end: "08:05", color: "#d8eedf", text: "🚲" },
+        { start: "08:05", end: "14:25", color: "#f9f7ff", text: "🏫" },
+        { start: "14:25", end: "14:40", color: "#d8eedf", text: "🚲" },
+        { start: "14:40", end: "17:30", color: "#fae7eb", text: "🛝" },
+        { start: "17:30", end: "18:30", color: "#f0e5d7", text: "🍽️" },
+        { start: "18:30", end: "19:00", color: "#c0e5e8", text: "🛁🪥" },
+        { start: "19:00", end: "19:15", color: "#eae2dd", text: "📚" },
+        { start: "19:15", end: "07:30", color: "#d0d9e2", text: "🛌" },
     ]
 });
 
