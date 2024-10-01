@@ -206,7 +206,7 @@ class CanvasClock {
             const y = this.#radius + Math.sin(midAngle + this.#rotation) * this.#labelExtent;
 
             this.#context.save();
-            this.#context.font = `${this.#digitSize / 2}px sans-serif`;
+            this.#context.font = `${this.#digitSize}px sans-serif`;
             this.#context.fillStyle = this.#stroke;
             this.#context.textAlign = "center";
             this.#context.textBaseline = "middle";
